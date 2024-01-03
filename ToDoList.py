@@ -26,6 +26,7 @@ class ToDoList:
         if thing.getCompleteInfo() is True:
             self._deleted_list.append(ToDo)
             self._curr_list.remove(thing)
+            print(thing.getName(), "is marked!")
 
     def __len__(self):
         return len(self._curr_list)
